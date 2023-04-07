@@ -14,8 +14,8 @@ const contact = () => {
         <h5 className='text-gray-400'>Get In Touch</h5>
         <h2 className='text-blue-400 text-2xl font-bold'>Contact Me</h2>
       </div>
-      <div className='flex gap-20 w-[350px]'>
-        <div className='grid grid-rows-3 gap-8 pl-60'>
+      <div className='flex gap-20 w-[500px] pb-20'>
+        <div className='grid grid-rows-3 gap-8 pl-60 '>
           <article  className='bg-blue-900 p-4 rounded-xl border-solid border-2 hover:bg-transparent border-blue-900 '>
              <MdOutlineEmail />
              <h4>Email</h4>
