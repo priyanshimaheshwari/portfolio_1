@@ -1,4 +1,5 @@
-import React  from 'react';
+import React, { useRef } from 'react';
+import emailjs from 'emailjs-com'
 import {MdOutlineEmail} from 'react-icons/md'
 import {BsWhatsapp} from 'react-icons/bs'
 import {RiMessengerLine} from 'react-icons/ri'
@@ -7,7 +8,23 @@ import {RiMessengerLine} from 'react-icons/ri'
 
 
 const contact = () => {
+    const form = useRef();
+const sendEmail = (e) => {
+    e.preventDefault();
 
+    emailjs.sendForm('service_llqfrb4', 'template_yo3zho9', form.current, 'xu1ufqCGivmb5pdEG')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+
+        
+    });
+
+    e.target.reset()
+
+     
+  };
   return (
     <section id="Contact">
       <div className='pt-16 text-center'>
@@ -36,7 +53,7 @@ const contact = () => {
              <a href="" className='text-blue-400'>Send a message</a>
           </article>
         </div>
-        <form  className='flex flex-col '>
+        <form ref={form} onSubmit={sendEmail}className='flex flex-col '>
           <input type="text" name="name" placeholder='Your full name' required className='bg-transparent rounded-xl border-solid border-2 border-blue-900 px-4 py-4 m-2'/>
           <input type="email" name="email" placeholder='Your email' className='bg-transparent rounded-xl border-solid border-2 border-blue-900 px-4 py-4 m-2' required />
           <textarea name="message" rows="7" placeholder='Your Message' className='bg-transparent rounded-xl border-solid border-2 border-blue-900 px-4 py-4 m-2'></textarea>
