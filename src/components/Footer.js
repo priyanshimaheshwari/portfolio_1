@@ -6,7 +6,6 @@ import {FaGithub} from 'react-icons/fa'
 
 const Footer = () => {
     
-
   return (
     <div className='bg-blue-400 text-center'>
         <a href="#" className=' font-bold text-black text-4xl pt-14'>PRIYANSHI</a>

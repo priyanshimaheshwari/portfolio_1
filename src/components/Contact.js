@@ -1,13 +1,12 @@
-import React, { useRef } from 'react';
+import React from 'react'
 import emailjs from 'emailjs-com'
 import {MdOutlineEmail} from 'react-icons/md'
 import {BsWhatsapp} from 'react-icons/bs'
 import {RiMessengerLine} from 'react-icons/ri'
+import { useRef } from 'react'
 
 
-
-
-const contact = () => {
+const Contact = () => {
     const form = useRef();
 const sendEmail = (e) => {
     e.preventDefault();
@@ -17,13 +16,10 @@ const sendEmail = (e) => {
         console.log(result.text);
     }, (error) => {
         console.log(error.text);
-
-        
-    });
+   });
 
     e.target.reset()
 
-     
   };
   return (
     <section id="Contact">
@@ -42,11 +38,6 @@ const sendEmail = (e) => {
           </article>
           <article  className='bg-blue-900 p-4 rounded-xl border-solid border-2 hover:bg-transparent border-blue-900'>
              <RiMessengerLine />
-             <h4>Messenger</h4>
-             <h5></h5>
-             <a href="" className='text-blue-400'>Send a message</a>
-          </article>
-          <article  className='bg-blue-900 p-4 rounded-xl border-solid border-2 hover:bg-transparent border-blue-900'>
              <BsWhatsapp />
              <h4>Whatsapp</h4>
              <h5></h5>
@@ -65,4 +56,4 @@ const sendEmail = (e) => {
   )
 }
 
-export default contact
+export default Contact

@@ -1,7 +1,5 @@
 import React from 'react'
 import me from '../assets/me.jpg'
-import {FaAward} from 'react-icons/fa'
-import {FiUsers} from 'react-icons/fi'
 import {VscFolderLibrary} from 'react-icons/vsc'
 
 const about = () => {
@@ -28,8 +26,8 @@ const about = () => {
             </div>
             </div>
           <p className='p-2'>
-          What is Lorem Ipsum in English?
-What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          Hello!!
+          <p>I am Priyanshi maheshwari.I am a Frontend Developer.</p>
           </p>
 
           <a href="#Contact" className='border bg-blue-400 text-blue-900 border-blue-400 py-1 px-5 rounded-md hover:bg-white/[0.6] hover:text-blue-900'>Let's Talk</a>
