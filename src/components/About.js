@@ -27,7 +27,7 @@ const about = () => {
             </div>
           <p className='p-2'>
           Hello!!
-          <p>I am Priyanshi maheshwari.I am a Frontend Developer.</p>
+          <p>I am Priyanshi maheshwari.I am a Frontend Developer. I am passionate about learning new technologies and building front-end applications using HTML,CC,Tailwind Javascript and React.</p>
           </p>
 
           <a href="#Contact" className='border bg-blue-400 text-blue-900 border-blue-400 py-1 px-5 rounded-md hover:bg-white/[0.6] hover:text-blue-900'>Let's Talk</a>
